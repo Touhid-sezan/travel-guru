@@ -21,11 +21,11 @@
     background: #f79f1b !important;
 }
 
-input[type="text"] {
-    width: 200px;
-    background: rgba(211, 211, 211, 0.322);
+.search-input {
+    width: 300px;
+    background: rgb(255, 255, 255);
     color: white;
-    padding: 10px;
+    padding: 5px 10px;
     border: 2px solid white;
     border-radius: 20px;
 }

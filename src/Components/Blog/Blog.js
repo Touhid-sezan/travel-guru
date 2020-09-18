@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import { Card, CardDeck } from 'react-bootstrap';
-import { MyContext } from '../../App';
+import { UserContext } from '../../App';
 import logo from '../../Images/Logo.png';
 import Header from '../Header/Header';
 
 
 const Blog = () => {
-    const [showArea] = useContext(MyContext);
+    const [showSpot] = useContext(UserContext);
     return (
-        <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showArea.img})`,  height:"120vh", backgroundSize:"cover", padding:"0 30px"}}>
+        <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showSpot.img})`,  height:"120vh", backgroundSize:"cover", padding:"0 30px"}}>
 
             <Header img={logo} color="white"></Header>
         <CardDeck>

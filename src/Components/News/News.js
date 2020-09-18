@@ -1,14 +1,13 @@
 import React, { useContext } from 'react';
 import Header from '../Header/Header';
 import newsPic from '../../Images/news-cox.jpg';
-import { MyContext } from '../../App';
+import { UserContext } from '../../App';
 
 
 const News = () => {
-    const [showArea] = useContext(MyContext);
+    const [showSpot] = useContext(UserContext);
     return (
-        <div style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showArea.img})`, height: "140vh", backgroundSize: "cover", padding: "0 30px", color: "white" }}>
-
+        <div style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showSpot.img})`, height: "140vh", backgroundSize: "cover", padding: "0 30px", color: "white" }}>
             <Header></Header>
             <div className="container">
                 <h1>Cox's Bazar businesses getting ready to host tourists after Eid</h1>

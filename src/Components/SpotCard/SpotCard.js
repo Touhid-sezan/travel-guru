@@ -1,14 +1,14 @@
 import { Grid } from "@material-ui/core";
 import React, { useContext } from "react";
-import { MyContext } from "../../App";
+import { UserContext } from "../../App";
 
 
 
 const ShopCard = (props) => {
-  const [showArea,setShowArea] = useContext(MyContext);
-  const { title, description, img } = props.spot;
+  const [showSpot,setShowSpot] = useContext(UserContext);
+  const { title, img } = props.spot;
 
-  const backgroundImageStyle = {
+  const backgroundStyle = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(${img})`,
     backgroundSize: "cover",
     backgroundPosition: "right top",
@@ -21,7 +21,7 @@ const ShopCard = (props) => {
   };
   return (
     <Grid item xs={12} md={4}>
-      <div onClick={() => setShowArea(props.spot)} style={backgroundImageStyle}>
+      <div onClick={() => setShowSpot(props.spot)} style={backgroundStyle}>
       <h2 style={{ marginTop: "250px", textAlign: "center", color: "white" }}>
         {title}
       </h2>

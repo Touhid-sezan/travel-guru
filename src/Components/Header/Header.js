@@ -14,7 +14,7 @@ const Header = (props) => {
                         </Link>
                     </li>
                     <li>
-                        <input type="text" placeholder="Search your destination" />
+                        <input className="search-input" type="text" placeholder="Search your destination" />
                     </li>
                     <li>
                         <Link to="/news">News</Link>
@@ -29,7 +29,7 @@ const Header = (props) => {
                         <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link to="/login"><Button className="login-btn">Login</Button></Link>
+                        <Link to="/loginOrRegister"><Button className="login-btn">Login</Button></Link>
                     </li>
                 </ul>
             </nav>

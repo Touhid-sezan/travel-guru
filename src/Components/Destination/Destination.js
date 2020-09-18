@@ -17,9 +17,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Grid } from '@material-ui/core';
 import Header from '../Header/Header';
-import logo from '../../Images/Logo.png';
 import sajek from '../../Images/Sajek.png';
-import { MyContext } from '../../App';
+import { UserContext } from '../../App';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -52,11 +51,11 @@ export default function RecipeReviewCard() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  const [showArea] = useContext(MyContext);
+  const [showSpot] = useContext(UserContext);
   return (
-    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showArea.img})`,  height:"110vh", backgroundSize:"cover", padding:"0 30px"}}>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showSpot.img})`,  height:"110vh", backgroundSize:"cover", padding:"0 30px"}}>
       <Grid >
-            <Header img={logo} color="white"></Header>
+            <Header></Header>
     <Card className={classes.root} style={{margin: "auto", marginTop:"40px"}}>
       <CardHeader
         avatar={

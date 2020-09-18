@@ -53,7 +53,7 @@ export const hotelData=[
     },
     {
         id:3,
-        title:"AR Lounge and pool (r&r b&b)",
+        title:"AR Lounge and pool (programming hero)",
         img:"https://i.ibb.co/R7MzZhY/hotel3.png",
         guests:4,
         bedroom:2,
