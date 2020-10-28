@@ -13,8 +13,4 @@
 * React
 * React Router
 * Material UI
-* Firebase
-* Node Js
-* Express Js
-* MongoDB
-* Heroku etc
+* Firebase etc
